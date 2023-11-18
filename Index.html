@@ -31,7 +31,7 @@
 	
 	<div class="container" >
 		<div class="SERIAL"  id="SERIAL" style="max-width: 100%;"> NUMERO DE SERIAL :   </div>
-		<div class="FECHA">
+		<div class="FECHA" style="max-width: 100%;" >
 
 			<div id="current_date">
 				<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"></script>
@@ -42,10 +42,11 @@
 					const formattedDate = moment().format('LL'); // Muestra la fecha en el formato largo localizado
 					document.getElementById("current_date").innerHTML = formattedDate;
 				</script>
+				
 			</div>
 
 		</div>
-		<div class="HORA">
+		<div class="HORA"  >
 
 			
 				<script>
@@ -56,10 +57,8 @@
 					}
 					
 					setInterval(myFunc, 1000);
-					
-
-				</script>
-				<p id="display-time"></p>
+					</script>
+					<a id="display-time"></a>
 		</div>
 		<div class="LOTERIA-CON-LA-Q-JUEGA"></div>
 		<div class="FECHA-EN-LA-QUE-JUEGA"></div>
