@@ -1,146 +1,183 @@
 
+
+body{
+  height: 100%;
+  
+  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-attachment: fixed;
+   background-color: black;
+  align-content: center;
+  text-align: center;
+
+  width: 100%; /* Cambia este valor al tamaño que desees */
+  height: 100%
+
+
+
+}
+
+
 .container {  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: .8fr .1fr .1fr .1fr .1fr .1fr 0.1fr .1fr .1fr .1fr .1fr .1fr .1fr .1fr .1fr .1fr;
-  gap: 2px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "TITULO TITULO TITULO TITULO TITULO TITULO"
-    "TITULO TITULO TITULO TITULO TITULO TITULO"
-    "SERIAL SERIAL SERIAL SERIAL SERIAL SERIAL"
-    "FECHA FECHA FECHA HORA HORA HORA"
-    "LOTERIA-CON-LA-Q-JUEGA LOTERIA-CON-LA-Q-JUEGA LOTERIA-CON-LA-Q-JUEGA FECHA-EN-LA-QUE-JUEGA FECHA-EN-LA-QUE-JUEGA FECHA-EN-LA-QUE-JUEGA"
-    "NOMBRE-DEL-VENDEDOR NOMBRE-DEL-VENDEDOR NUMEROV NOMBRE-DE-CLIENTE NOMBRE-DE-CLIENTE NUMEROTELCL"
-    "NUMERO VALOR-APOSTADO COMBINADO PATA UÑA VALOR-A-GANAR"
-    "NUMERO1 VA1 VC1 VP1 VU1 VG1"
-    "NUMERO2 VA2 VC2 VP2 VU2 VG2"
-    "NUMERO3 VA3 VC3 VP3 VU3 VG3"
-    "NUMERO4 VA4 VC4 VP4 VU4 VG4"
-    "NUMERO5 VA5 VC5 VP5 VU5 VG5"
-    "NUMERO6 VA6 VC6 VP6 VU6 VG6"
-    "TOTALES TOTAL1 TOTALC TOTALP TOTALU ."
-    "TOTAL-A-PAGAR TOTAL-A-PAGAR TOTALPA PARRAFO PARRAFO PARRAFO"
-    ". . . . . .";
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: .8fr repeat(5, .1fr) 0.1fr repeat(9, .1fr);
+  gap: 2% 0%;
+  grid-auto-flow: row dense;
+  justify-content: space-around;
+  align-content: stretch;
+  align-items: stretch;
   width: 100%;
   height: 100%;
 }
 
-.SERIAL { grid-area: SERIAL; }
+.SERIAL { grid-area: 3 / 1 / 4 / 7; 
 
-.FECHA { grid-area: FECHA; }
 
-.HORA { grid-area: HORA; }
 
-.LOTERIA-CON-LA-Q-JUEGA { grid-area: LOTERIA-CON-LA-Q-JUEGA; }
+  font-style: unset;
+  color:#d8cfcf;
+  font-size: 23px;
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
+	border-radius: 3PX;
+	background-color: rgb(66, 64, 64);
+	backdrop-filter: blur(3px);
+  margin: 15px;
+	border-radius: 0px 10px 10px 15px;
+	
 
-.FECHA-EN-LA-QUE-JUEGA { grid-area: FECHA-EN-LA-QUE-JUEGA; }
+}
 
-.TITULO { grid-area: TITULO; }
+.FECHA { grid-area: 4 / 1 / 5 / 4; }
 
-.NUMERO { grid-area: NUMERO; }
+.HORA { grid-area: 4 / 4 / 5 / 7; }
 
-.VALOR-APOSTADO { grid-area: VALOR-APOSTADO; }
+.LOTERIA-CON-LA-Q-JUEGA { grid-area: 5 / 1 / 6 / 4; }
 
-.COMBINADO { grid-area: COMBINADO; }
+.FECHA-EN-LA-QUE-JUEGA { grid-area: 5 / 4 / 6 / 7; }
 
-.PATA { grid-area: PATA; }
+.TITULO { grid-area: 1 / 1 / 3 / 7; 
 
-.UÑA { grid-area: UÑA; }
 
-.VALOR-A-GANAR { grid-area: VALOR-A-GANAR; }
 
-.NUMERO1 { grid-area: NUMERO1; }
+  font-style: unset;
+  color:#d8cfcf;
+  font-size: 23px;
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
+	border-radius: 3PX;
+	background-color: rgb(66, 64, 64);
+	backdrop-filter: blur(3px);
+  margin: 15px;
+	border-radius: 0px 10px 10px 15px;
+	
 
-.NUMERO2 { grid-area: NUMERO2; }
+}
 
-.NUMERO3 { grid-area: NUMERO3; }
+.NUMERO { grid-area: 7 / 1 / 8 / 2; }
 
-.NOMBRE-DEL-VENDEDOR { grid-area: NOMBRE-DEL-VENDEDOR; }
+.VALOR-APOSTADO { grid-area: 7 / 2 / 8 / 3; }
 
-.NUMEROV { grid-area: NUMEROV; }
+.COMBINADO { grid-area: 7 / 3 / 8 / 4; }
 
-.NOMBRE-DE-CLIENTE { grid-area: NOMBRE-DE-CLIENTE; }
+.PATA { grid-area: 7 / 4 / 8 / 5; }
 
-.NUMEROTELCL { grid-area: NUMEROTELCL; }
+.UÑA { grid-area: 7 / 5 / 8 / 6; }
 
-.NUMERO4 { grid-area: NUMERO4; }
+.VALOR-A-GANAR { grid-area: 7 / 6 / 8 / 7; }
 
-.NUMERO5 { grid-area: NUMERO5; }
+.NUMERO1 { grid-area: 8 / 1 / 9 / 2; }
 
-.NUMERO6 { grid-area: NUMERO6; }
+.NUMERO2 { grid-area: 9 / 1 / 10 / 2; }
 
-.TOTALES { grid-area: TOTALES; }
+.NUMERO3 { grid-area: 10 / 1 / 11 / 2; }
 
-.VA1 { grid-area: VA1; }
+.NOMBRE-DEL-VENDEDOR { grid-area: 6 / 1 / 7 / 3; }
 
-.VA2 { grid-area: VA2; }
+.NUMEROV { grid-area: 6 / 3 / 7 / 4; }
 
-.VA3 { grid-area: VA3; }
+.NOMBRE-DE-CLIENTE { grid-area: 6 / 4 / 7 / 6; }
 
-.VA4 { grid-area: VA4; }
+.NUMEROTELCL { grid-area: 6 / 6 / 7 / 7; }
 
-.VA5 { grid-area: VA5; }
+.NUMERO4 { grid-area: 11 / 1 / 12 / 2; }
 
-.VA6 { grid-area: VA6; }
+.NUMERO5 { grid-area: 12 / 1 / 13 / 2; }
 
-.TOTAL1 { grid-area: TOTAL1; }
+.NUMERO6 { grid-area: 13 / 1 / 14 / 2; }
 
-.VC1 { grid-area: VC1; }
+.TOTALES { grid-area: 14 / 1 / 15 / 2; }
 
-.VC2 { grid-area: VC2; }
+.VA1 { grid-area: 8 / 2 / 9 / 3; }
 
-.VC3 { grid-area: VC3; }
+.VA2 { grid-area: 9 / 2 / 10 / 3; }
 
-.VC4 { grid-area: VC4; }
+.VA3 { grid-area: 10 / 2 / 11 / 3; }
 
-.VC5 { grid-area: VC5; }
+.VA4 { grid-area: 11 / 2 / 12 / 3; }
 
-.VC6 { grid-area: VC6; }
+.VA5 { grid-area: 12 / 2 / 13 / 3; }
 
-.TOTALC { grid-area: TOTALC; }
+.VA6 { grid-area: 13 / 2 / 14 / 3; }
 
-.VP1 { grid-area: VP1; }
+.TOTAL1 { grid-area: 14 / 2 / 15 / 3; }
 
-.VP2 { grid-area: VP2; }
+.VC1 { grid-area: 8 / 3 / 9 / 4; }
 
-.VP3 { grid-area: VP3; }
+.VC2 { grid-area: 9 / 3 / 10 / 4; }
 
-.VP4 { grid-area: VP4; }
+.VC3 { grid-area: 10 / 3 / 11 / 4; }
 
-.VP5 { grid-area: VP5; }
+.VC4 { grid-area: 11 / 3 / 12 / 4; }
 
-.VP6 { grid-area: VP6; }
+.VC5 { grid-area: 12 / 3 / 13 / 4; }
 
-.TOTALP { grid-area: TOTALP; }
+.VC6 { grid-area: 13 / 3 / 14 / 4; }
 
-.VU1 { grid-area: VU1; }
+.TOTALC { grid-area: 14 / 3 / 15 / 4; }
 
-.VU2 { grid-area: VU2; }
+.VP1 { grid-area: 8 / 4 / 9 / 5; }
 
-.VU3 { grid-area: VU3; }
+.VP2 { grid-area: 9 / 4 / 10 / 5; }
 
-.VU4 { grid-area: VU4; }
+.VP3 { grid-area: 10 / 4 / 11 / 5; }
 
-.VU5 { grid-area: VU5; }
+.VP4 { grid-area: 11 / 4 / 12 / 5; }
 
-.VU6 { grid-area: VU6; }
+.VP5 { grid-area: 12 / 4 / 13 / 5; }
 
-.TOTALU { grid-area: TOTALU; }
+.VP6 { grid-area: 13 / 4 / 14 / 5; }
 
-.TOTAL-A-PAGAR { grid-area: TOTAL-A-PAGAR; }
+.TOTALP { grid-area: 14 / 4 / 15 / 5; }
 
-.TOTALPA { grid-area: TOTALPA; }
+.VU1 { grid-area: 8 / 5 / 9 / 6; }
 
-.PARRAFO { grid-area: PARRAFO; }
+.VU2 { grid-area: 9 / 5 / 10 / 6; }
 
-.VG1 { grid-area: VG1; }
+.VU3 { grid-area: 10 / 5 / 11 / 6; }
 
-.VG2 { grid-area: VG2; }
+.VU4 { grid-area: 11 / 5 / 12 / 6; }
 
-.VG3 { grid-area: VG3; }
+.VU5 { grid-area: 12 / 5 / 13 / 6; }
 
-.VG4 { grid-area: VG4; }
+.VU6 { grid-area: 13 / 5 / 14 / 6; }
 
-.VG5 { grid-area: VG5; }
+.TOTALU { grid-area: 14 / 5 / 15 / 6; }
 
-.VG6 { grid-area: VG6; }
+.TOTAL-A-PAGAR { grid-area: 15 / 1 / 16 / 3; }
+
+.TOTALPA { grid-area: 15 / 3 / 16 / 4; }
+
+.PARRAFO { grid-area: 15 / 4 / 16 / 7; }
+
+.VG1 { grid-area: 8 / 6 / 9 / 7; }
+
+.VG2 { grid-area: 9 / 6 / 10 / 7; }
+
+.VG3 { grid-area: 10 / 6 / 11 / 7; }
+
+.VG4 { grid-area: 11 / 6 / 12 / 7; }
+
+.VG5 { grid-area: 12 / 6 / 13 / 7; }
+
+.VG6 { grid-area: 13 / 6 / 14 / 7; }
