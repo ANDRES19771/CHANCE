@@ -31,12 +31,21 @@
 	
 	<div class="container" >
 		<div class="SERIAL"  id="SERIAL" style="max-width: 100%;"> NUMERO DE SERIAL :   </div>
-		<div class="FECHA"></div>
+		<div class="FECHA">
+
+			<div id="current_date">
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+				<script>
+					const formattedDate = moment().fromNow();
+					document.getElementById("current_date").innerHTML = `Última actualización: ${formattedDate}`;
+				</script>
+			</div>
+
+		</div>
 		<div class="HORA"></div>
 		<div class="LOTERIA-CON-LA-Q-JUEGA"></div>
 		<div class="FECHA-EN-LA-QUE-JUEGA"></div>
-		<div class="TITULO"><img src="MI RIFa (5).gif"Descripción de la imagen  style="max-width: 100%;">  </div>
-
+		<div class="TITULO" ><img src="MI RIFa (5).gif"Descripción de la imagen  style="max-width: 100%; height: 100%;" >  </div>
 
 		
 		<div class="NUMERO"></div>
