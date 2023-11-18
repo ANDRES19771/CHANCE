@@ -152,14 +152,55 @@ body{
 
 
 }
-.FECHA-EN-LA-QUE-JUEGA { grid-area: FECHA-EN-LA-QUE-JUEGA; }
+.FECHA-EN-LA-QUE-JUEGA { grid-area: FECHA-EN-LA-QUE-JUEGA; 
+
+
+  background-color: rgb(85, 78, 78);
+ 
+
+  color:#020202;
+  font-size: 23px;
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
+	border-radius: 3PX;
+	background-color: rgba(207, 199, 199, 0.548);
+	backdrop-filter: blur(3px);
+
+	border-radius: 0px 10px 10px 15px;
+	
+
+  width: 100%;
+  height: 100%;
+
+
+
+
+
+
+
+}
+
+
+#fecha{ 
+
+  font-family: 'Arial', sans-serif; 
+ 
+  font-weight: bold; 
+  font-style: italic; 
+
+
+}
+
+
 
 .TITULO { grid-area: TITULO;
   width: 100%;
   height: 100%;
  }
 
-.NUMERO { grid-area: NUMERO; }
+.NUMERO { grid-area: NUMERO;
+
+
+}
 
 .VALOR-APOSTADO { grid-area: VALOR-APOSTADO; }
 
