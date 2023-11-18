@@ -10,22 +10,14 @@ body{
   align-content: center;
   text-align: center;
 
-  width: 100%; /* Cambia este valor al tamaño que desees */
-  height: 100%
+  
 
 
 
 }
-
-
-
-
-
-
-
 .container {  display: grid;
-  grid-template-columns: 0.5fr repeat(6, 1fr) 0.5fr;
-  grid-template-rows: repeat(6, .1fr) 0.1fr repeat(9, .1fr);
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+  grid-template-rows: .9fr .1fr .1fr .1fr .1fr .1fr 0.1fr .1fr .1fr .1fr .1fr .1fr .1fr .1fr .1fr .1fr;
   gap: 2px 0px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -49,7 +41,18 @@ body{
   height: 100%;
 }
 
-.SERIAL { grid-area: SERIAL; }
+.SERIAL { grid-area: SERIAL;
+  color:#d8cfcf;
+  font-size: 23px;
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
+	border-radius: 3PX;
+	background-color: rgba(255, 255, 255, 0.116);
+	backdrop-filter: blur(3px);
+  margin: 15px;
+	border-radius: 0px 10px 10px 15px;
+
+
+}
 
 .FECHA { grid-area: FECHA; }
 
@@ -59,12 +62,7 @@ body{
 
 .FECHA-EN-LA-QUE-JUEGA { grid-area: FECHA-EN-LA-QUE-JUEGA; }
 
-.TITULO { grid-area: TITULO;
-
-  width: 100%; /* Cambia este valor al tamaño que desees */
-  height: 100%; /* Esto mantiene la proporción de la imagen */
-
-}
+.TITULO { grid-area: TITULO; }
 
 .NUMERO { grid-area: NUMERO; }
 
