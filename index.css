@@ -1,58 +1,31 @@
-body{
-  height: 100%;
-  
-  
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: left top;
-  background-attachment: fixed;
-  background-color: black;
-  align-content: center;
-  text-align: center;
 
-  
-
-
-
-}
 .container {  display: grid;
-  grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
-  grid-template-rows: .9fr .1fr .1fr .1fr .1fr .1fr 0.1fr .1fr .1fr .1fr .1fr .1fr .1fr .1fr .1fr .1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: .8fr .1fr .1fr .1fr .1fr .1fr 0.1fr .1fr .1fr .1fr .1fr .1fr .1fr .1fr .1fr .1fr;
   gap: 2px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    ". TITULO TITULO TITULO TITULO TITULO TITULO ."
-    ". TITULO TITULO TITULO TITULO TITULO TITULO ."
-    ". SERIAL SERIAL SERIAL SERIAL SERIAL SERIAL ."
-    ". FECHA FECHA FECHA HORA HORA HORA ."
-    ". LOTERIA-CON-LA-Q-JUEGA LOTERIA-CON-LA-Q-JUEGA LOTERIA-CON-LA-Q-JUEGA FECHA-EN-LA-QUE-JUEGA FECHA-EN-LA-QUE-JUEGA FECHA-EN-LA-QUE-JUEGA ."
-    ". NOMBRE-DEL-VENDEDOR NOMBRE-DEL-VENDEDOR NUMEROV NOMBRE-DE-CLIENTE NOMBRE-DE-CLIENTE NUMEROTELCL ."
-    ". NUMERO VALOR-APOSTADO COMBINADO PATA UÑA VALOR-A-GANAR ."
-    ". NUMERO1 VA1 VC1 VP1 VU1 VG1 ."
-    ". NUMERO2 VA2 VC2 VP2 VU2 VG2 ."
-    ". NUMERO3 VA3 VC3 VP3 VU3 VG3 ."
-    ". NUMERO4 VA4 VC4 VP4 VU4 VG4 ."
-    ". NUMERO5 VA5 VC5 VP5 VU5 VG5 ."
-    ". NUMERO6 VA6 VC6 VP6 VU6 VG6 ."
-    ". TOTALES TOTAL1 TOTALC TOTALP TOTALU . ."
-    ". TOTAL-A-PAGAR TOTAL-A-PAGAR TOTALPA PARRAFO PARRAFO PARRAFO ."
-    ". . . . . . . .";
+    "TITULO TITULO TITULO TITULO TITULO TITULO"
+    "TITULO TITULO TITULO TITULO TITULO TITULO"
+    "SERIAL SERIAL SERIAL SERIAL SERIAL SERIAL"
+    "FECHA FECHA FECHA HORA HORA HORA"
+    "LOTERIA-CON-LA-Q-JUEGA LOTERIA-CON-LA-Q-JUEGA LOTERIA-CON-LA-Q-JUEGA FECHA-EN-LA-QUE-JUEGA FECHA-EN-LA-QUE-JUEGA FECHA-EN-LA-QUE-JUEGA"
+    "NOMBRE-DEL-VENDEDOR NOMBRE-DEL-VENDEDOR NUMEROV NOMBRE-DE-CLIENTE NOMBRE-DE-CLIENTE NUMEROTELCL"
+    "NUMERO VALOR-APOSTADO COMBINADO PATA UÑA VALOR-A-GANAR"
+    "NUMERO1 VA1 VC1 VP1 VU1 VG1"
+    "NUMERO2 VA2 VC2 VP2 VU2 VG2"
+    "NUMERO3 VA3 VC3 VP3 VU3 VG3"
+    "NUMERO4 VA4 VC4 VP4 VU4 VG4"
+    "NUMERO5 VA5 VC5 VP5 VU5 VG5"
+    "NUMERO6 VA6 VC6 VP6 VU6 VG6"
+    "TOTALES TOTAL1 TOTALC TOTALP TOTALU ."
+    "TOTAL-A-PAGAR TOTAL-A-PAGAR TOTALPA PARRAFO PARRAFO PARRAFO"
+    ". . . . . .";
   width: 100%;
   height: 100%;
 }
 
-.SERIAL { grid-area: SERIAL;
-  color:#d8cfcf;
-  font-size: 23px;
-	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
-	border-radius: 3PX;
-	background-color: rgba(255, 255, 255, 0.116);
-	backdrop-filter: blur(3px);
-  margin: 15px;
-	border-radius: 0px 10px 10px 15px;
-
-
-}
+.SERIAL { grid-area: SERIAL; }
 
 .FECHA { grid-area: FECHA; }
 
