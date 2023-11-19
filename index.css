@@ -295,29 +295,46 @@ body{
 .VALOR-A-GANAR { grid-area: VALOR-A-GANAR;
 
   background-color: rgb(85, 78, 78);
- 
-
   color:#f5ecec;
   font-size: 23px;
 	box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.651);	
 	border-radius: 3PX;
 	background-color: rgba(51, 50, 50, 0.548);
 	backdrop-filter: blur(3px);
-
 	border-radius: 10px 10px 10px 10px;
-	
-
-  width: 100%;
+	width: 100%;
   height: 100%;
 }
 
-.NUMERO1 { grid-area: NUMERO1; }
+.NUMERO1 { grid-area: NUMERO1; 
+
+  background-color: rgb(85, 78, 78);
+  color:#f5ecec;
+  font-size: 23px;
+	box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.651);	
+	border-radius: 3PX;
+	background-color: rgba(51, 50, 50, 0.548);
+	backdrop-filter: blur(3px);
+	border-radius: 10px 10px 10px 10px;
+	width: 100%;
+  height: 100%;}
 
 .NUMERO2 { grid-area: NUMERO2; }
 
 .NUMERO3 { grid-area: NUMERO3; }
 
-.NOMBRE-DEL-VENDEDOR { grid-area: NOMBRE-DEL-VENDEDOR; }
+.NOMBRE-DEL-VENDEDOR { grid-area: NOMBRE-DEL-VENDEDOR; 
+
+  background-color: rgb(85, 78, 78);
+  color:#f5ecec;
+  font-size: 23px;
+	box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.651);	
+	border-radius: 3PX;
+	background-color: rgba(51, 50, 50, 0.548);
+	backdrop-filter: blur(3px);
+	border-radius: 10px 10px 10px 10px;
+	width: 100%;
+  height: 100%;}
 
 .NUMEROV { grid-area: NUMEROV; }
 
