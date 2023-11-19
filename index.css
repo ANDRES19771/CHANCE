@@ -334,14 +334,19 @@ body{
 
   background-color: rgb(85, 78, 78);
   color:#f5ecec;
-  font-size: 25px;
+
 	box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.651);	
-	border-radius: 3PX;
-	background-color: rgba(51, 50, 50, 0.548);
-	backdrop-filter: blur(3px);
+
+	background-color: rgb(255, 254, 254);
+
 	border-radius: 10px 10px 10px 10px;
-	width: 100%;
-  height: 100%;}
+
+width: 100%;
+height: 100%;
+
+
+
+}
 
 .NUMEROV { grid-area: NUMEROV;
 
@@ -356,14 +361,9 @@ body{
 	border-radius: 10px 10px 10px 10px;
 	width: 100%;
   height: 100%;
-
+ 
 
 }
-.NUMEROTELEFONO{
-margin: 0 auto;
-text-align: center;>
-}
-
 
 .NOMBRE-DE-CLIENTE { grid-area: NOMBRE-DE-CLIENTE; }
 
