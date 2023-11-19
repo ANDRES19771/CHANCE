@@ -22,7 +22,7 @@ body{
 
 }
 .container {  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
   grid-template-rows: 1.5fr .1fr .1fr .1fr .1fr .1fr 0.1fr .1fr .1fr .1fr .1fr .1fr .1fr .1fr .1fr .1fr;
   gap: 2% 0%;
   grid-auto-flow: row dense;
@@ -61,7 +61,7 @@ body{
 	background-color: rgb(66, 64, 64);
 	backdrop-filter: blur(3px);
 
-	border-radius: 0px 10px 10px 15px;
+	border-radius: 00px 15px 0px 15px;
 	
   width: 100%;
   height: 100%;
@@ -141,7 +141,7 @@ body{
   font-size: 23px;
 	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
 	border-radius: 3PX;
-	background-color: rgba(207, 199, 199, 0.548);
+	background-color: rgba(255, 255, 255, 0.952);
 	backdrop-filter: blur(3px);
 
 	border-radius: 0px 10px 10px 15px;
@@ -160,9 +160,9 @@ body{
 
   color:#020202;
   font-size: 23px;
-	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
+	box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.2);	
 	border-radius: 3PX;
-	background-color: rgba(207, 199, 199, 0.548);
+	background-color: rgba(255, 255, 255, 0.952);
 	backdrop-filter: blur(3px);
 
 	border-radius: 0px 10px 10px 15px;
@@ -198,19 +198,118 @@ body{
  }
 
 .NUMERO { grid-area: NUMERO;
+  background-color: rgb(85, 78, 78);
+ 
+
+  color:#f5ecec;
+  font-size: 23px;
+	box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.651);	
+	border-radius: 3PX;
+	background-color: rgba(51, 50, 50, 0.548);
+	backdrop-filter: blur(3px);
+
+	border-radius: 10px 10px 10px 10px;
+	
+
+  width: 100%;
+  height: 100%;
+
+
+
 
 
 }
 
-.VALOR-APOSTADO { grid-area: VALOR-APOSTADO; }
+.VALOR-APOSTADO { grid-area: VALOR-APOSTADO;
+  background-color: rgb(85, 78, 78);
+ 
 
-.COMBINADO { grid-area: COMBINADO; }
+  color:#f5ecec;
+  font-size: 23px;
+	box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.651);	
+	border-radius: 3PX;
+	background-color: rgba(51, 50, 50, 0.548);
+	backdrop-filter: blur(3px);
 
-.PATA { grid-area: PATA; }
+	border-radius: 10px 10px 10px 10px;
+	
 
-.UÑA { grid-area: UÑA; }
+  width: 100%;
+  height: 100%;
+ }
 
-.VALOR-A-GANAR { grid-area: VALOR-A-GANAR; }
+.COMBINADO { grid-area: COMBINADO;
+  background-color: rgb(85, 78, 78);
+ 
+
+  color:#f5ecec;
+  font-size: 23px;
+	box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.651);	
+	border-radius: 3PX;
+	background-color: rgba(51, 50, 50, 0.548);
+	backdrop-filter: blur(3px);
+
+	border-radius: 10px 10px 10px 10px;
+	
+
+  width: 100%;
+  height: 100%; }
+
+.PATA { grid-area: PATA; 
+  background-color: rgb(85, 78, 78);
+ 
+
+  color:#f5ecec;
+  font-size: 23px;
+	box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.651);	
+	border-radius: 3PX;
+	background-color: rgba(51, 50, 50, 0.548);
+	backdrop-filter: blur(3px);
+
+	border-radius: 10px 10px 10px 10px;
+	
+
+  width: 100%;
+  height: 100%;}
+
+.UÑA { grid-area: UÑA; 
+
+  background-color: rgb(85, 78, 78);
+ 
+
+  color:#f5ecec;
+  font-size: 23px;
+	box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.651);	
+	border-radius: 3PX;
+	background-color: rgba(51, 50, 50, 0.548);
+	backdrop-filter: blur(3px);
+
+	border-radius: 10px 10px 10px 10px;
+	
+
+  width: 100%;
+  height: 100%;}
+
+
+
+.VALOR-A-GANAR { grid-area: VALOR-A-GANAR;
+
+  background-color: rgb(85, 78, 78);
+ 
+
+  color:#f5ecec;
+  font-size: 23px;
+	box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.651);	
+	border-radius: 3PX;
+	background-color: rgba(51, 50, 50, 0.548);
+	backdrop-filter: blur(3px);
+
+	border-radius: 10px 10px 10px 10px;
+	
+
+  width: 100%;
+  height: 100%;
+}
 
 .NUMERO1 { grid-area: NUMERO1; }
 
