@@ -1,0 +1,129 @@
+
+
+body{
+  height: 100%;
+  
+  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-attachment: fixed;
+   background-color: black;
+  align-content: center;
+  text-align: center;
+
+  width: 100%; /* Cambia este valor al tamaño que desees */
+  height: 100%;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+.container {  display: grid;
+  grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: stretch;
+  align-content: stretch;
+  justify-items: stretch;
+  align-items: stretch;
+  grid-template-areas:
+    ". TITULO TITULO TITULO TITULO TITULO TITULO ."
+    ". TITULO TITULO TITULO TITULO TITULO TITULO ."
+    ". SERIAL SERIAL SERIAL SERIAL SERIAL SERIAL ."
+    ". FECHA FECHA FECHA HORA HORA HORA ."
+    ". LOTERIA-CON-LA-Q-JUEGA LOTERIA-CON-LA-Q-JUEGA LOTERIA-CON-LA-Q-JUEGA LOTERIA-CON-LA-Q-JUEGA LOTERIA-CON-LA-Q-JUEGA LOTERIA-CON-LA-Q-JUEGA ."
+    ". fecha fecha fecha fecha fecha fecha ."
+    ". NUMERO APUESTA COMBI PATA UÑA PREMIO ."
+    ". . . . . . . ."
+    ". . . . . . . ."
+    ". . . . . . . ."
+    ". . . . . . . ."
+    ". . . . . . . ."
+    ". . . . . . . .";
+}
+
+.TITULO { grid-area: TITULO;
+  justify-self: stretch; 
+  align-self: stretch; 
+  grid-area: TITULO; 
+  width: 100%; 
+  color:#d8cfcf00;
+}
+
+.SERIAL { grid-area: SERIAL;
+
+
+  font-style: unset;
+  color:#d8cfcf;
+  font-size: 23px;
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
+	border-radius: 3PX;
+	background-color: rgb(66, 64, 64);
+	backdrop-filter: blur(3px);
+
+	border-radius: 00px 15px 0px 15px;
+	
+  width: 100%;
+  height: 100%;
+
+
+
+
+}
+
+.FECHA { grid-area: FECHA; }
+
+.HORA { grid-area: HORA; }
+
+.LOTERIA-CON-LA-Q-JUEGA { grid-area: LOTERIA-CON-LA-Q-JUEGA; }
+
+.fecha { grid-area: fecha; }
+
+.NUMERO { grid-area: NUMERO; }
+
+.APUESTA { grid-area: APUESTA; }
+
+.COMBI { grid-area: COMBI; }
+
+.PATA { grid-area: PATA; }
+
+.UÑA { grid-area: UÑA; }
+
+.PREMIO { grid-area: PREMIO; }
+
+
+html, body , .container {
+  height: 100%;
+  margin: 0;
+}
+
+/* For presentation only, no need to copy the code below */
+
+.container * {
+  border: 1px solid red;
+  position: relative;
+}
+
+.container *:after {
+  content:attr(class);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
