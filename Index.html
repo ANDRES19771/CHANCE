@@ -1,53 +1,29 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="index1.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="TITULO" ><img src="MI RIFa (5).gif"  style="width: 100%; height: 100%;" >  </div>
 
-<!--[if lte IE 9]>
-<html lang="en" class="oldie">
-<![endif]-->
-<!--[if gt IE 9]><!-->
-	
-		<!--<![endif]-->
+      <div class="SERIAL"  id="SERIAL" style="max-width: 100%;"> NUMERO DE SERIAL :   </div>
+      <div class="FECHA" style="max-width: 100%;" >
 
-
-
-
-<html lang="en">
-<head>
-
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Button Hover Effect</title>
-
-
-
-
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<link rel='stylesheet' href='index.css'>
-    <title>Document</title>
-</head>
-<body>
-	<div class="TITULO" ><img src="MI RIFa (5).gif"Descripción de la imagen  style="max-width: 100%; height: 100%;" >  </div>
-
-	
-		<div class="SERIAL"  id="SERIAL" style="max-width: 100%;"> NUMERO DE SERIAL :   </div>
-		<div class="FECHA" style="max-width: 100%;" >
-
-			<div id="current_date">
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"></script>
-				<script>
-					// Establece la localización deseada
-					moment.locale('es'); // Español
-			
-					const formattedDate = moment().format('LL'); // Muestra la fecha en el formato largo localizado
-					document.getElementById("current_date").innerHTML = formattedDate;
-				</script>
-				
-			</div>
-
-		</div>
-		<div class="HORA"  >
+        <div id="current_date">
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"></script>
+          <script>
+            // Establece la localización deseada
+            moment.locale('es'); // Español
+        
+            const formattedDate = moment().format('LL'); // Muestra la fecha en el formato largo localizado
+            document.getElementById("current_date").innerHTML = formattedDate;
+          </script>
+          
+        </div>
+  
+      </div>
+      <div class="HORA"  >
 
 			
 				<script>
@@ -61,136 +37,49 @@
 					</script>
 					<a id="display-time"></a>
 		</div>
-		<div class="LOTERIA-CON-LA-Q-JUEGA">
+    <div class="LOTERIA-CON-LA-Q-JUEGA">
 
-<select name="LOTERIA-CON-LA-Q-JUEGA" id="LOTERIA"  style="max-width: 100%;"        > 
-  <option value="España">   LOTERIA SANTANDER  </option>
-  <option value="Francia">LOTERIA BOYACA</option>
-  <option value="Italia">Italia</option>
-</select>
-
-<style>
-	select {
-	
-
-      font-family: 'Arial', sans-serif; font-size: 16px; font-weight: bold; font-style: italic; color: red;
-	}  
-	</style>
-
-		</div>
-		<div class="FECHA-EN-LA-QUE-JUEGA">
-
-<label for="fecha">Fecha de Sorteo:</label>
-<input type="date" name="fecha" id="fecha" style="font-family: 'Arial', sans-serif; font-size: 18px; font-weight: bold; font-style: italic; ">
+      <select name="LOTERIA-CON-LA-Q-JUEGA" id="LOTERIA"  style="max-width: 100%;"        > 
+        <option value="España">   LOTERIA SANTANDER  </option>
+        <option value="Francia">LOTERIA BOYACA</option>
+        <option value="Italia">Italia</option>
+      </select>
+      
+      <style>
+        select {
+        
+      
+            font-family: 'Arial', sans-serif; font-size: 16px; font-weight: bold; font-style: italic; color: red;
+        }  
+        </style>
+      
+          </div>
+          
+      <div class="fecha">
 
 
-<style>
-	select {
-	
-
-      font-family: 'Arial', sans-serif; font-size: 16px; font-weight: bold; font-style: italic; color: red;
-	}  
-	</style>
-
-
-		</div>
-		
-		
-		<div class="NUMERO">NUMERO</div>
-		<div class="VALOR-APOSTADO">VALOR APOSTADO</div>
-		<div class="COMBINADO">COMBINADO</div>
-		<div class="PATA">PATA</div>
-		<div class="UÑA">UÑA</div>
-		<div class="VALOR-A-GANAR">VALOR</div>
-		<div class="NUMERO1">  <input type="number" name="BOLETO" min ="0" max ="999" placeholder="NUM" required> </div>
-		<div class="NUMERO2"></div>
-		<div class="NUMERO3"></div>
-		<div class="NOMBRE-DEL-VENDEDOR" >		
-			<input   type="text"  max-width="200"  name="NOMBREVENDEDOR" id="NOMBREVENDEDOR"    placeholder="NOMBRE DEL VENDEDOR COMPLETO " required minlength="20" maxlength="60" pattern="^[a-zA-Z]+$ " 
-			style="font-family: 'Arial', sans-serif; font-size: 18px; 
-			font-weight: bold; font-style: italic;  margin: 0 auto;
-			 text-align: center;  background-color: rgb(252, 250, 250);
-			  border-color:rgb(255, 255, 255); border-style: dotted ; width: 400px;
-			  height: 30px;">
-		</div>
-		<div class="NUMEROV"><input type="tel" name="NUMEROTELEFONO" id="NUMEROTELEFONO"    placeholder="NUMERO DE TELEFONO" required minlength="10" maxlength="10" pattern="[0-9]{3}[0-9]{7}" 
-			style="font-family: 'Arial', sans-serif; font-size:18px; 
-			font-weight: bold; font-style: italic;  margin: 0 auto; 
-			text-align: center;  background-color: rgb(252, 250, 250);
-			 border-color:rgb(255, 255, 255); border-style: dotted ;width: 200px;
-			 height: 30px;">
-		</div>
-
-
-		<div class="NOMBRE-DE-CLIENTE">
-
-			<input   type="text"  max-width="200"  name="NOMBRECLIENTE" id="NOMBRECLIENTE"    placeholder="NOMBRE DEL CLIENTE COMPLETO " required minlength="20" maxlength="60" pattern="^[a-zA-Z]+$ " 
-			style="font-family: 'Arial', sans-serif; font-size: 18px; 
-			font-weight: bold; font-style: italic;  margin: 0 auto;
-			 text-align: center;  background-color: rgb(252, 250, 250);
-			  border-color:rgb(255, 255, 255); border-style: dotted ; width: 400px;
-			  height: 30px;">
+        <label for="fecha">Fecha de Sorteo:</label>
+        <input type="date" name="fecha" id="fecha" style="font-family: 'Arial', sans-serif; font-size: 18px; font-weight: bold; font-style: italic; ">
+        
+        
+        <style>
+          select {
+          
+        
+              font-family: 'Arial', sans-serif; font-size: 16px; font-weight: bold; font-style: italic; color: red;
+          }  
+          </style>
+        
 
 
 
-
-
-
-
-		</div>
-		<div class="NUMEROTELCL">
-			<input type="tel" name="NUMEROTELEFONO" id="NUMEROTELEFONO"    placeholder="NUMERO DE TELEFONO" required minlength="10" maxlength="10" pattern="[0-9]{3}[0-9]{7}" 
-			style="font-family: 'Arial', sans-serif; font-size:18px; 
-			font-weight: bold; font-style: italic;  margin: 0 auto; 
-			text-align: center;  background-color: rgb(252, 250, 250);
-			 border-color:rgb(255, 255, 255); border-style: dotted ;width: 200px;
-			 height: 30px;">
-		</div>
-		<div class="NUMERO4"></div>
-		<div class="NUMERO5"></div>
-		<div class="NUMERO6"></div>
-		<div class="TOTALES"></div>
-		<div class="VA1"></div>
-		<div class="VA2"></div>
-		<div class="VA3"></div>
-		<div class="VA4"></div>
-		<div class="VA5"></div>
-		<div class="VA6"></div>
-		<div class="TOTAL1"></div>
-		<div class="VC1"></div>
-		<div class="VC2"></div>
-		<div class="VC3"></div>
-		<div class="VC4"></div>
-		<div class="VC5"></div>
-		<div class="VC6"></div>
-		<div class="TOTALC"></div>
-		<div class="VP1"></div>
-		<div class="VP2"></div>
-		<div class="VP3"></div>
-		<div class="VP4"></div>
-		<div class="VP5"></div>
-		<div class="VP6"></div>
-		<div class="TOTALP"></div>
-		<div class="VU1"></div>
-		<div class="VU2"></div>
-		<div class="VU3"></div>
-		<div class="VU4"></div>
-		<div class="VU5"></div>
-		<div class="VU6"></div>
-		<div class="TOTALU"></div>
-		<div class="TOTAL-A-PAGAR"></div>
-		<div class="TOTALPA"></div>
-		<div class="PARRAFO"></div>
-		<div class="VG1"></div>
-		<div class="VG2"></div>
-		<div class="VG3"></div>
-		<div class="VG4"></div>
-		<div class="VG5"></div>
-		<div class="VG6"></div>
-	
-
-
-
-
-</body>
+      </div>
+      <div class="NUMERO"></div>
+      <div class="APUESTA"></div>
+      <div class="COMBI"></div>
+      <div class="PATA"></div>
+      <div class="UÑA"></div>
+      <div class="PREMIO"></div>
+    </div>
+  </body>
 </html>
