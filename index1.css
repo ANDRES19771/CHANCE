@@ -26,8 +26,6 @@ body{
 
 
 
-
-
 .container {  display: grid;
   grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -76,13 +74,38 @@ body{
 	
   width: 100%;
   height: 100%;
-
+  justify-self: center; 
+  align-self: center; 
+  grid-area: SERIAL; 
+  width: 100%; 
+  height: 100%; 
 
 
 
 }
 
-.FECHA { grid-area: FECHA; }
+.FECHA { grid-area: FECHA; 
+
+
+
+  font-style: unset;
+  color:#d8cfcf;
+  font-size: 23px;
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
+	border-radius: 3PX;
+	background-color: rgb(66, 64, 64);
+	backdrop-filter: blur(3px);
+
+	border-radius: 00px 15px 0px 15px;
+	
+  width: 100%;
+  height: 100%;
+
+
+
+
+
+}
 
 .HORA { grid-area: HORA; }
 
