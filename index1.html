@@ -23,9 +23,57 @@
         </div>
   
       </div>
-      <div class="HORA"></div>
-      <div class="LOTERIA-CON-LA-Q-JUEGA"></div>
-      <div class="fecha"></div>
+      <div class="HORA"  >
+
+			
+				<script>
+					function myFunc() {
+						var now = new Date();
+						var time = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
+						document.getElementById('display-time').innerHTML = time;
+					}
+					
+					setInterval(myFunc, 1000);
+					</script>
+					<a id="display-time"></a>
+		</div>
+    <div class="LOTERIA-CON-LA-Q-JUEGA">
+
+      <select name="LOTERIA-CON-LA-Q-JUEGA" id="LOTERIA"  style="max-width: 100%;"        > 
+        <option value="España">   LOTERIA SANTANDER  </option>
+        <option value="Francia">LOTERIA BOYACA</option>
+        <option value="Italia">Italia</option>
+      </select>
+      
+      <style>
+        select {
+        
+      
+            font-family: 'Arial', sans-serif; font-size: 16px; font-weight: bold; font-style: italic; color: red;
+        }  
+        </style>
+      
+          </div>
+          
+      <div class="fecha">
+
+
+        <label for="fecha">Fecha de Sorteo:</label>
+        <input type="date" name="fecha" id="fecha" style="font-family: 'Arial', sans-serif; font-size: 18px; font-weight: bold; font-style: italic; ">
+        
+        
+        <style>
+          select {
+          
+        
+              font-family: 'Arial', sans-serif; font-size: 16px; font-weight: bold; font-style: italic; color: red;
+          }  
+          </style>
+        
+
+
+
+      </div>
       <div class="NUMERO"></div>
       <div class="APUESTA"></div>
       <div class="COMBI"></div>

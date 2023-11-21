@@ -11,7 +11,7 @@ body{
    background-color: black;
   align-content: center;
   text-align: center;
-
+  justify-content: center;
   width: 100%; /* Cambia este valor al tamaño que desees */
   height: 100%;
 
@@ -65,9 +65,9 @@ body{
   font-style: unset;
   color:#d8cfcf;
   font-size: 23px;
-	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
+	box-shadow: 0 0 1rem 0 rgba(189, 182, 182, 0.541);	
 	border-radius: 3PX;
-	background-color: rgb(66, 64, 64);
+	background-color: rgba(66, 64, 64, 0.247);
 	backdrop-filter: blur(3px);
 
 	border-radius: 00px 15px 0px 15px;
@@ -107,11 +107,71 @@ body{
 
 }
 
-.HORA { grid-area: HORA; }
+.HORA { grid-area: HORA;
 
-.LOTERIA-CON-LA-Q-JUEGA { grid-area: LOTERIA-CON-LA-Q-JUEGA; }
+  font-style: unset;
+  color:#d8cfcf;
+  font-size: 23px;
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
+	border-radius: 3PX;
+	background-color: rgb(66, 64, 64);
+	backdrop-filter: blur(3px);
 
-.fecha { grid-area: fecha; }
+	border-radius: 00px 15px 0px 15px;
+	
+  width: 100%;
+  height: 100%;
+
+
+
+
+
+
+}
+
+.LOTERIA-CON-LA-Q-JUEGA { grid-area: LOTERIA-CON-LA-Q-JUEGA;
+
+
+  font-style: unset;
+  color:#d8cfcf;
+  font-size: 23px;
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
+	border-radius: 3PX;
+	background-color: rgb(66, 64, 64);
+	backdrop-filter: blur(3px);
+
+	border-radius: 00px 15px 0px 15px;
+	
+  width: 100%;
+  height: 100%;
+
+
+
+
+}
+
+.fecha { grid-area: fecha; 
+
+
+
+  font-style: unset;
+  color:#d8cfcf;
+  font-size: 23px;
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
+	border-radius: 3PX;
+	background-color: rgb(66, 64, 64);
+	backdrop-filter: blur(3px);
+
+	border-radius: 00px 15px 0px 15px;
+	
+  width: 100%;
+  height: 100%;
+
+
+
+
+
+}
 
 .NUMERO { grid-area: NUMERO; }
 
@@ -134,13 +194,13 @@ html, body , .container {
 /* For presentation only, no need to copy the code below */
 
 .container * {
-  border: 1px solid red;
+  border: 1px solid rgb(63, 56, 56);
   position: relative;
 }
 
 .container *:after {
-  content:attr(class);
-  position: absolute;
+ 
+  position: center;
   top: 0;
   left: 0;
   width: 100%;
