@@ -5,11 +5,15 @@
   </head>
   <body>
     <div class="container">
+
+
+
+
       <div class="TITULO" ><img src="MI RIFa (5).gif"  style="width: 100%; height: 100%;" >  </div>
 
       <div class="SERIAL"  id="SERIAL" style="max-width: 100%;"> NUMERO DE SERIAL :   </div>
+      
       <div class="FECHA" style="max-width: 100%;" >
-
         <div id="current_date">
           <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"></script>
           <script>
@@ -19,61 +23,38 @@
             const formattedDate = moment().format('LL'); // Muestra la fecha en el formato largo localizado
             document.getElementById("current_date").innerHTML = formattedDate;
           </script>
-          
         </div>
-  
       </div>
-      <div class="HORA"   >
 
-			
+      <div class="HORA"   >
 				<script>
 					function myFunc() {
 						var now = new Date();
 						var time = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
 						document.getElementById('display-time').innerHTML = time;
 					}
-					
 					setInterval(myFunc, 1000);
 					</script>
 					<a id="display-time"  ></a>
 		</div>
-    <div class="LOTERIA-CON-LA-Q-JUEGA" >
 
+    <div class="LOTERIA-CON-LA-Q-JUEGA" >
       <select name="LOTERIA-CON-LA-Q-JUEGA" id="LOTERIA"  style="width: 100%; height: 100%"        > 
         <option value="España">   LOTERIA SANTANDER  </option>
         <option value="Francia">LOTERIA BOYACA</option>
         <option value="Italia">Italia</option>
       </select>
-      
       <style>
-        select {
-        
-      
-            font-family: 'Arial', sans-serif; font-size: 55px; font-weight: bold; font-style: italic; color: red;
+       select {
+       font-family: 'Arial', sans-serif; font-size: 16px; font-weight: bold; font-style: italic; color: rgba(255, 0, 0, 0.514);
         }  
-        </style>
-      
-          </div>
+      </style>
+        </div>
           
       <div class="fecha">
-
-
         <label for="fecha">Fecha de Sorteo:</label>
         <input type="date" name="fecha" id="fecha" style="font-family: 'Arial', sans-serif; font-size: 45px; font-weight: bold; font-style: italic; ">
-        
-        
-        <style>
-          select {
-          
-        
-              font-family: 'Arial', sans-serif; font-size: 16px; font-weight: bold; font-style: italic; color: red;
-          }  
-          </style>
-        
-
-
-
-      </div>
+       </div>
 
       <div class="NOMBRE-DEL-VENDEDOR">
         <input   type="text"  max-width="200"  name="NOMBREVENDEDOR" id="NOMBREVENDEDOR"    placeholder="NOMBRE DEL VENDEDOR " required minlength="20" maxlength="60" pattern="^[a-zA-Z]+$ " 
@@ -82,12 +63,8 @@
          text-align: center;  background-color: rgb(238, 234, 234);
           border-color:rgb(255, 255, 255); border-style: dotted ; width: 99%;
           height: 45px;">
-  
-
-
-
-        
       </div>
+
       <div class="NUMERO-CELULAR-DEL-VENDEDOR">
         <input type="tel" name="NUMEROTELEFONOVENDE" id="NUMEROTELEFONOVENDE"    placeholder="NUMERO VENDEDOR" required minlength="10" maxlength="10" pattern="[0-9]{3}[0-9]{7}" 
 			style="font-family: 'Arial', sans-serif; font-size:45px; 
@@ -96,6 +73,7 @@
 			 border-color:rgb(255, 255, 255); border-style: dotted ;width: 99%;
 			 height: 45px;">
       </div>
+
       <div class="NOMBRE-DEL-CLIENTE">
         <input   type="text"  max-width="200"  name="NOMBRECLIENTE" id="NOMBRECLIENTE"    placeholder="NOMBRE DEL CLIENTE " required minlength="20" maxlength="60" pattern="^[a-zA-Z]+$ " 
         style="font-family: 'Arial', sans-serif; font-size: 45px; 
@@ -103,10 +81,8 @@
          text-align: center;  background-color: rgb(238, 234, 234);
           border-color:rgb(255, 255, 255); border-style: dotted ; width: 99%;
           height: 45px;">
-  
+     </div>
 
-
-      </div>
       <div class="NUMERO-TELEFONO-CLIENTE">
         <input type="tel" name="NUMEROTELEFONOVENDE" id="NUMEROTELEFONOVENDE"    placeholder="NUMERO CLIENTE" required minlength="10" maxlength="10" pattern="[0-9]{3}[0-9]{7}" 
         style="font-family: 'Arial', sans-serif; font-size:45px; 
@@ -116,75 +92,72 @@
          height: 45px;">
       </div>
 
-
-
-
-
       <div class="NUMERO"  >
-      
-       <label id="numero" style="font-size: 25px; color: white;   width: 100%; 
+      <label id="numero" style="font-size: 25px; color: white;   width: 100%; 
        height: 100%; ">NUMERO</label>
-      
       </div>
+
       <div class="APUESTA">
         <label id="APUESTA" style="font-size: 25px; color: white;">APUESTA</label>
-
       </div>
-      <div class="COMBI">
 
+      <div class="COMBI">
         <label id="COMBI" style="font-size: 25px; color: white;">COMBI</label>
       </div>
+
       <div class="PATA">
          <label id="COMBI" style="font-size: 25px; color: white;">PATA</label></div>
+
       <div class="UÑA">
         <label id="COMBI" style="font-size: 25px; color: white;">UÑA</label>
       </div>
+
       <div class="PREMIO">
         <label id="COMBI" style="font-size: 25px; color: white;">PREMIO</label>
       </div>
 
       <div class="NUMERO1">
-       
-    <input type="number" id="NUMERO1" min="0" max="999" step="1" placeholder="000"
+      <input type="number" id="NUMERO1" min="0" max="999" step="1" placeholder="000"
     style="font-family: 'Arial', sans-serif; font-size:45px; 
     font-weight: bold; font-style: italic;  margin: 0 auto; 
     text-align: center;  background-color: rgb(252, 250, 250);
      border-color:rgb(255, 255, 255); border-style: dotted ;width: 99%;
      height: 45px;"
       />
-</div>
+      <Script>
+        var NUMERO1 = document.getElementById("NUMERO1");
+        NUMERO1.addEventListener("change", function() {
+          if (NUMERO1.value < 0 || NUMERO1.value > 999) {
+            NUMERO1.value = "";
+            alert("El valor debe estar entre 0 y 999");
+          }
+        });
+        </Script>
 
 
 
 
-     
-<div class="APUESTA1">
-  <input type="number" id="APUESTA1" min="0" max="1000" step="1" placeholder="000"
-  style="font-family: 'Arial', sans-serif; font-size:45px; 
-  font-weight: bold; font-style: italic;  margin: 0 auto; 
-  text-align: center;  background-color: rgb(252, 250, 250);
+       </div>
+
+   <div class="APUESTA1">
+    <input type="number" id="APUESTA1" min="0" max="1000" step="1" placeholder="000"
+    style="font-family: 'Arial', sans-serif; font-size:45px; 
+   font-weight: bold; font-style: italic;  margin: 0 auto; 
+   text-align: center;  background-color: rgb(252, 250, 250);
    border-color:rgb(255, 255, 255); border-style: dotted ;width: 99%;
    height: 45px;"
     />
+  <Script>
+  var APUESTA1 = document.getElementById("APUESTA1");
 
-
-<Script>
-var APUESTA1 = document.getElementById("APUESTA1");
-
-APUESTA1.addEventListener("change", function() {
+  APUESTA1.addEventListener("change", function() {
   if (APUESTA1.value < 0 || APUESTA1.value > 5000) {
     APUESTA1.value = "";
     alert("El valor debe estar entre 0 y 5000");
   }
-});
-
-</Script>
-</div>
-
-
-
-
-
+   });
+  </Script>
+  </div>
 
       <div class="COMBI1"> 
         <input type="number" id="COMBI1" min="0" max="1000" step="1" placeholder="000"
@@ -196,7 +169,6 @@ APUESTA1.addEventListener("change", function() {
           />
       <Script>
       var COMBI1 = document.getElementById("COMBI1");
-      
       COMBI1.addEventListener("change", function() {
         if (COMBI1.value < 0 || COMBI1.value > 5000) {
           COMBI1.value = "";
@@ -206,11 +178,8 @@ APUESTA1.addEventListener("change", function() {
       </Script>
       </div>
 
-
-
       <div class="PATA1">
-
-        <input type="number" id="PATA1" min="0" max="1000" step="1" placeholder="000"
+      <input type="number" id="PATA1" min="0" max="1000" step="1" placeholder="000"
         style="font-family: 'Arial', sans-serif; font-size:45px; 
         font-weight: bold; font-style: italic;  margin: 0 auto; 
         text-align: center;  background-color: rgb(252, 250, 250);
@@ -219,7 +188,6 @@ APUESTA1.addEventListener("change", function() {
           />
       <Script>
       var PATA1 = document.getElementById("PATA1");
-      
       PATA1.addEventListener("change", function() {
         if (PATA1.value < 0 || PATA1.value > 5000) {
           PATA1.value = "";
@@ -229,16 +197,7 @@ APUESTA1.addEventListener("change", function() {
       </Script>
       </div>
 
-
-
-
-
-
-
-
-
       <div class="UÑA1">
-        
         <input type="number" id="UÑA1" min="0" max="1000" step="1" placeholder="000"
         style="font-family: 'Arial', sans-serif; font-size:45px; 
         font-weight: bold; font-style: italic;  margin: 0 auto; 
@@ -257,28 +216,22 @@ APUESTA1.addEventListener("change", function() {
       });
       </Script>
       </div>
+
       <div class="PREMIO1">
-
         <a id="resultado"  >
-
-
           <script>
             var resultado = document.getElementById("APUESTA1").value ;
             var resultado1 = document.getElementById("COMBI1").value ;
             var label = document.getElementById("resultado");
             label.innerHTML = resultado;
-            
             document.getElementById("APUESTA1").addEventListener("change", function() {
             resultado = (document.getElementById("APUESTA1").value * 400) +  (document.getElementById("COMBI1").value * 83);
             label.innerHTML = resultado;
             });
-
             document.getElementById("COMBI1").addEventListener("change", function() {
               resultado = (document.getElementById("APUESTA1").value * 400) +  (document.getElementById("COMBI1").value * 83);
               label.innerHTML = resultado;
               });
-
-            
             </script>
 
 
