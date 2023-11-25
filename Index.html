@@ -225,13 +225,19 @@
             var label = document.getElementById("resultado");
             label.innerHTML = resultado;
             document.getElementById("APUESTA1").addEventListener("change", function() {
-            resultado = (document.getElementById("APUESTA1").value * 400) +  (document.getElementById("COMBI1").value * 83);
+            resultado = (document.getElementById("APUESTA1").value * 400) +  (document.getElementById("COMBI1").value * 83) +  (document.getElementById("PATA1").value * 50)+  (document.getElementById("UÑA1").value * 5);
             label.innerHTML = resultado;
             });
             document.getElementById("COMBI1").addEventListener("change", function() {
-              resultado = (document.getElementById("APUESTA1").value * 400) +  (document.getElementById("COMBI1").value * 83);
+              resultado = (document.getElementById("APUESTA1").value * 400) +  (document.getElementById("COMBI1").value * 83) +  (document.getElementById("PATA1").value * 50)+  (document.getElementById("UÑA1").value * 5);
               label.innerHTML = resultado;
               });
+              document.getElementById("PATA1").addEventListener("change", function() {
+                resultado = (document.getElementById("APUESTA1").value * 400) +  (document.getElementById("COMBI1").value * 83) +  (document.getElementById("PATA1").value * 50)+  (document.getElementById("UÑA1").value * 5);   label.innerHTML = resultado;
+                });
+                document.getElementById("UÑA1").addEventListener("change", function() {
+                  resultado = (document.getElementById("APUESTA1").value * 400) +  (document.getElementById("COMBI1").value * 83) +  (document.getElementById("PATA1").value * 50)+  (document.getElementById("UÑA1").value * 5);label.innerHTML = resultado;
+                  });
             </script>
 
 
