@@ -187,8 +187,6 @@ APUESTA1.addEventListener("change", function() {
 
 
       <div class="COMBI1"> 
-
-
         <input type="number" id="COMBI1" min="0" max="1000" step="1" placeholder="000"
         style="font-family: 'Arial', sans-serif; font-size:45px; 
         font-weight: bold; font-style: italic;  margin: 0 auto; 
@@ -196,8 +194,6 @@ APUESTA1.addEventListener("change", function() {
          border-color:rgb(255, 255, 255); border-style: dotted ;width: 99%;
          height: 45px;"
           />
-      
-      
       <Script>
       var COMBI1 = document.getElementById("COMBI1");
       
@@ -207,35 +203,87 @@ APUESTA1.addEventListener("change", function() {
           alert("El valor debe estar entre 0 y 5000");
         }
       });
-      
       </Script>
-
-
-
-
-
-
-
-
-
       </div>
-      <div class="PATA1"></div>
-      <div class="UÑA1"></div>
+
+
+
+      <div class="PATA1">
+
+        <input type="number" id="PATA1" min="0" max="1000" step="1" placeholder="000"
+        style="font-family: 'Arial', sans-serif; font-size:45px; 
+        font-weight: bold; font-style: italic;  margin: 0 auto; 
+        text-align: center;  background-color: rgb(252, 250, 250);
+         border-color:rgb(255, 255, 255); border-style: dotted ;width: 99%;
+         height: 45px;"
+          />
+      <Script>
+      var PATA1 = document.getElementById("PATA1");
+      
+      PATA1.addEventListener("change", function() {
+        if (PATA1.value < 0 || PATA1.value > 5000) {
+          PATA1.value = "";
+          alert("El valor debe estar entre 0 y 5000");
+        }
+      });
+      </Script>
+      </div>
+
+
+
+
+
+
+
+
+
+      <div class="UÑA1">
+        
+        <input type="number" id="UÑA1" min="0" max="1000" step="1" placeholder="000"
+        style="font-family: 'Arial', sans-serif; font-size:45px; 
+        font-weight: bold; font-style: italic;  margin: 0 auto; 
+        text-align: center;  background-color: rgb(252, 250, 250);
+         border-color:rgb(255, 255, 255); border-style: dotted ;width: 99%;
+         height: 45px;"
+          />
+      <Script>
+      var UÑA1 = document.getElementById("UÑA1");
+      
+      UÑA1.addEventListener("change", function() {
+        if (UÑA1.value < 0 || UÑA1.value > 5000) {
+          UÑA1.value = "";
+          alert("El valor debe estar entre 0 y 5000");
+        }
+      });
+      </Script>
+      </div>
       <div class="PREMIO1">
 
         <a id="resultado"  >
 
 
           <script>
-            var resultado = document.getElementById("APUESTA1").value * 450;
+            var resultado = document.getElementById("APUESTA1").value ;
+            var resultado1 = document.getElementById("COMBI1").value ;
             var label = document.getElementById("resultado");
             label.innerHTML = resultado;
             
             document.getElementById("APUESTA1").addEventListener("change", function() {
-            resultado = document.getElementById("APUESTA1").value * 450;
+            resultado = (document.getElementById("APUESTA1").value * 400) +  (document.getElementById("COMBI1").value * 83);
             label.innerHTML = resultado;
             });
+
+            document.getElementById("COMBI1").addEventListener("change", function() {
+              resultado = (document.getElementById("APUESTA1").value * 400) +  (document.getElementById("COMBI1").value * 83);
+              label.innerHTML = resultado;
+              });
+
+            
             </script>
+
+
+
+
             
             <a id="resultado"  ></a>
             

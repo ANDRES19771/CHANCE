@@ -315,9 +315,29 @@ body{
   color: rgb(255, 253, 253);
 }
 
-.PATA1 { grid-area: PATA1; }
+.PATA1 { grid-area: PATA1;
 
-.UÑA1 { grid-area: UÑA1; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+
+  color: rgb(255, 253, 253);
+
+
+}
+
+.UÑA1 { grid-area: UÑA1; 
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: rgb(255, 253, 253);
+
+
+}
 
 .PREMIO1 { grid-area: PREMIO1; 
 
