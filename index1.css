@@ -380,6 +380,111 @@ body{
 
 
 
+.NUMERO2 { grid-area: NUMERO2; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-style: unset;
+  color:#d8cfcf;
+  font-size: 100%;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
+  border-radius: 3PX;
+  background-color: rgb(66, 64, 64);
+  backdrop-filter: blur(3px);
+  border-radius: 00px 15px 0px 15px;
+  width: 100%;
+  height: 100%;
+}
+
+.APUESTA2 { grid-area: APUESTA2; 
+
+display: flex;
+justify-content: center;
+align-items: center;
+color: black;
+font-style: unset;
+color:#d8cfcf;
+font-size: 100%;
+box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
+border-radius: 3PX;
+background-color: rgb(66, 64, 64);
+backdrop-filter: blur(3px);
+border-radius: 00px 15px 0px 15px;
+width: 100%;
+height: 100%;
+
+}
+
+.COMBI2 { grid-area: COMBI2; 
+
+display: flex;
+justify-content: center;
+align-items: center;
+color: black;
+font-style: unset;
+color:#d8cfcf;
+font-size: 100%;
+box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
+border-radius: 3PX;
+background-color: rgb(66, 64, 64);
+backdrop-filter: blur(3px);
+border-radius: 00px 15px 0px 15px;
+width: 100%;
+height: 100%;
+}
+
+.PATA2 { grid-area: PATA2;
+
+display: flex;
+justify-content: center;
+align-items: center;
+color: black;
+font-style: unset;
+color:#d8cfcf;
+font-size: 100%;
+box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
+border-radius: 3PX;
+background-color: rgb(66, 64, 64);
+backdrop-filter: blur(3px);
+border-radius: 00px 15px 0px 15px;
+width: 100%;
+height: 100%;
+
+
+}
+
+.UÑA2 { grid-area: UÑA2; 
+
+display: flex;
+justify-content: center;
+align-items: center;
+color: black;
+font-style: unset;
+color:#d8cfcf;
+font-size: 100%;
+box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
+border-radius: 3PX;
+background-color: rgb(66, 64, 64);
+backdrop-filter: blur(3px);
+border-radius: 00px 15px 0px 15px;
+width: 100%;
+height: 100%;
+
+
+}
+
+.PREMIO2 { grid-area: PREMIO2; 
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+color: rgb(255, 253, 253);
+
+
+}
+
 
 
 

@@ -216,7 +216,7 @@
         <a id="resultado"  >
           <script>
             var resultado = document.getElementById("APUESTA1").value ;
-            var resultado1 = document.getElementById("COMBI1").value ;
+        
             var label = document.getElementById("resultado");
             label.innerHTML = resultado;
             document.getElementById("APUESTA1").addEventListener("change", function() {
@@ -234,8 +234,22 @@
                   resultado = (document.getElementById("APUESTA1").value * 400) +  (document.getElementById("COMBI1").value * 83) +  (document.getElementById("PATA1").value * 50)+  (document.getElementById("UÑA1").value * 5);label.innerHTML = resultado;
                   });
             </script>
-            <a id="resultado"  ></a>
+          
           </a>
+          <a id="resultado"  ></a>
+        </div>
+
+
+    
+
+
+
+
+
+
+
+
+
 
 
 
@@ -251,7 +265,117 @@
 
 
           
-      </div>
+
+
+          <div class="NUMERO2">
+            <input type="number" id="NUMERO2" min="0" max="999" step="1" placeholder="000"
+          style="font-family: 'Arial', sans-serif; font-size:45px; 
+          font-weight: bold; font-style: italic;  margin: 0 auto; 
+          text-align: center;  background-color: rgb(252, 250, 250);
+           border-color:rgb(255, 255, 255); border-style: dotted ;width: 99%;
+           height: 45px;"
+            />
+            <Script>
+              var NUMERO2 = document.getElementById("NUMERO2");
+              NUMERO2.addEventListener("change", function() {
+                if (NUMERO2.value < 0 || NUMERO2.value > 999) {
+                  NUMERO2.value = "";
+                  alert("El valor debe estar entre 0 y 999");
+                }
+              });
+              </Script>
+             </div>
+      
+         <div class="APUESTA2">
+          <input type="number" id="APUESTA2" min="0" max="1000" step="1" placeholder="000"
+          style="font-family: 'Arial', sans-serif; font-size:45px; 
+         font-weight: bold; font-style: italic;  margin: 0 auto; 
+         text-align: center;  background-color: rgb(252, 250, 250);
+         border-color:rgb(255, 255, 255); border-style: dotted ;width: 99%;
+         height: 45px;"
+          />
+        <Script>
+        var APUESTA2 = document.getElementById("APUESTA2");
+        APUESTA2.addEventListener("change", function() {
+        if (APUESTA2.value < 0 || APUESTA2.value > 5000) {
+          APUESTA2.value = "";
+          alert("El valor debe estar entre 0 y 5000");
+        }
+         });
+        </Script>
+        </div>
+      
+            <div class="COMBI2"> 
+              <input type="number" id="COMBI2" min="0" max="1000" step="1" placeholder="000"
+              style="font-family: 'Arial', sans-serif; font-size:45px; 
+              font-weight: bold; font-style: italic;  margin: 0 auto; 
+              text-align: center;  background-color: rgb(252, 250, 250);
+               border-color:rgb(255, 255, 255); border-style: dotted ;width: 99%;
+               height: 45px;"
+                />
+            <Script>
+            var COMBI2 = document.getElementById("COMBI2");
+            COMBI2.addEventListener("change", function() {
+              if (COMBI2.value < 0 || COMBI2.value > 5000) {
+                COMBI2.value = "";
+                alert("El valor debe estar entre 0 y 5000");
+              }
+            });
+            </Script>
+            </div>
+      
+            <div class="PATA2">
+            <input type="number" id="PATA2" min="0" max="1000" step="1" placeholder="000"
+              style="font-family: 'Arial', sans-serif; font-size:45px; 
+              font-weight: bold; font-style: italic;  margin: 0 auto; 
+              text-align: center;  background-color: rgb(252, 250, 250);
+               border-color:rgb(255, 255, 255); border-style: dotted ;width: 99%;
+               height: 45px;"
+                />
+            <Script>
+            var PATA2 = document.getElementById("PATA2");
+            PATA2.addEventListener("change", function() {
+              if (PATA2.value < 0 || PATA2.value > 5000) {
+                PATA2.value = "";
+                alert("El valor debe estar entre 0 y 5000");
+              }
+            });
+            </Script>
+            </div>
+      
+            <div class="UÑA2">
+              <input type="number" id="UÑA2" min="0" max="1000" step="1" placeholder="000"
+              style="font-family: 'Arial', sans-serif; font-size:45px; 
+              font-weight: bold; font-style: italic;  margin: 0 auto; 
+              text-align: center;  background-color: rgb(252, 250, 250);
+               border-color:rgb(255, 255, 255); border-style: dotted ;width: 99%;
+               height: 45px;"
+                />
+            <Script>
+            var UÑA2 = document.getElementById("UÑA2");
+            
+            UÑA2.addEventListener("change", function() {
+              if (UÑA2.value < 0 || UÑA2.value > 5000) {
+                UÑA2.value = "";
+                alert("El valor debe estar entre 0 y 5000");
+              }
+            });
+            </Script>
+            </div>
+      
+      
+      
+      
+                
+
+
+
+
+
+
+
+
+          
 
 
 
