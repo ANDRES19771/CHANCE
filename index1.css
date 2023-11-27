@@ -28,7 +28,7 @@ body{
 
 .container {  display: grid;
   grid-template-columns: 0.5% 16.5% 16.5% 16.5% 16.5% 16.5% 16.5% 0.5%;
-  grid-template-rows: 1fr 0.5fr 0.5fr 1fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr .3fr 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr 0.5fr 1fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   justify-content: stretch;
@@ -49,7 +49,7 @@ body{
     ". NUMERO APUESTA COMBI PATA UÑA PREMIO ."
     ". NUMERO1 APUESTA1 COMBI1 PATA1 UÑA1 PREMIO1 ."
     ". NUMERO2 APUESTA2 COMBI2 PATA2 UÑA2 PREMIO2 ."
-    ". . . . . . . ."
+    ". NUMERO3 APUESTA3 COMBI3 PATA3 UÑA3 PREMIO3 ."
     ". . . . . . . .";
 }
 
@@ -484,6 +484,143 @@ color: rgb(255, 253, 253);
 
 
 }
+
+
+
+
+
+
+
+
+.NUMERO3 { grid-area: NUMERO3; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-style: unset;
+  color:#d8cfcf;
+  font-size: 100%;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
+  border-radius: 3PX;
+  background-color: rgb(66, 64, 64);
+  backdrop-filter: blur(3px);
+  border-radius: 00px 15px 0px 15px;
+  width: 100%;
+  height: 100%;
+}
+
+.APUESTA3 { grid-area: APUESTA3; 
+
+display: flex;
+justify-content: center;
+align-items: center;
+color: black;
+font-style: unset;
+color:#d8cfcf;
+font-size: 100%;
+box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
+border-radius: 3PX;
+background-color: rgb(66, 64, 64);
+backdrop-filter: blur(3px);
+border-radius: 00px 15px 0px 15px;
+width: 100%;
+height: 100%;
+
+}
+
+.COMBI3 { grid-area: COMBI3; 
+
+display: flex;
+justify-content: center;
+align-items: center;
+color: black;
+font-style: unset;
+color:#d8cfcf;
+font-size: 100%;
+box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
+border-radius: 3PX;
+background-color: rgb(66, 64, 64);
+backdrop-filter: blur(3px);
+border-radius: 00px 15px 0px 15px;
+width: 100%;
+height: 100%;
+}
+
+.PATA3 { grid-area: PATA3;
+
+display: flex;
+justify-content: center;
+align-items: center;
+color: black;
+font-style: unset;
+color:#d8cfcf;
+font-size: 100%;
+box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
+border-radius: 3PX;
+background-color: rgb(66, 64, 64);
+backdrop-filter: blur(3px);
+border-radius: 00px 15px 0px 15px;
+width: 100%;
+height: 100%;
+
+
+}
+
+.UÑA3 { grid-area: UÑA3; 
+
+display: flex;
+justify-content: center;
+align-items: center;
+color: black;
+font-style: unset;
+color:#d8cfcf;
+font-size: 100%;
+box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
+border-radius: 3PX;
+background-color: rgb(66, 64, 64);
+backdrop-filter: blur(3px);
+border-radius: 00px 15px 0px 15px;
+width: 100%;
+height: 100%;
+
+
+}
+
+.PREMIO3 { grid-area: PREMIO3; 
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+color: rgb(255, 253, 253);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -220,18 +220,18 @@
             var label = document.getElementById("resultado1");
             label.innerHTML = resultado1;
             document.getElementById("APUESTA1").addEventListener("change", function() {
-            resultado1 = (document.getElementById("APUESTA1").value * 400) +  (document.getElementById("COMBI1").value * 83) +  (document.getElementById("PATA1").value * 50)+  (document.getElementById("UÑA1").value * 5);
+            resultado1 = (document.getElementById("APUESTA1").value * 400) +  (document.getElementById("COMBI1").value * 83) +  (document.getElementById("PATA1").value * 50)+  (document.getElementById("UÑA1").value * 4);
             label.innerHTML = resultado1;
             });
             document.getElementById("COMBI1").addEventListener("change", function() {
-              resultado1 = (document.getElementById("APUESTA1").value * 400) +  (document.getElementById("COMBI1").value * 83) +  (document.getElementById("PATA1").value * 50)+  (document.getElementById("UÑA1").value * 5);
+              resultado1 = (document.getElementById("APUESTA1").value * 400) +  (document.getElementById("COMBI1").value * 83) +  (document.getElementById("PATA1").value * 50)+  (document.getElementById("UÑA1").value * 4);
               label.innerHTML = resultado1;
               });
               document.getElementById("PATA1").addEventListener("change", function() {
-                resultado1 = (document.getElementById("APUESTA1").value * 400) +  (document.getElementById("COMBI1").value * 83) +  (document.getElementById("PATA1").value * 50)+  (document.getElementById("UÑA1").value * 5);   label.innerHTML = resultado1;
+                resultado1 = (document.getElementById("APUESTA1").value * 400) +  (document.getElementById("COMBI1").value * 83) +  (document.getElementById("PATA1").value * 50)+  (document.getElementById("UÑA1").value * 4);   label.innerHTML = resultado1;
                 });
                 document.getElementById("UÑA1").addEventListener("change", function() {
-                  resultado1 = (document.getElementById("APUESTA1").value * 400) +  (document.getElementById("COMBI1").value * 83) +  (document.getElementById("PATA1").value * 50)+  (document.getElementById("UÑA1").value * 5);label.innerHTML = resultado1;
+                  resultado1 = (document.getElementById("APUESTA1").value * 400) +  (document.getElementById("COMBI1").value * 83) +  (document.getElementById("PATA1").value * 50)+  (document.getElementById("UÑA1").value * 4);label.innerHTML = resultado1;
                   });
             </script>
           
@@ -239,32 +239,6 @@
           <a id="resultado1"  ></a>
         </div>
 
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
 
 
           <div class="NUMERO2">
@@ -360,7 +334,7 @@
                 alert("El valor debe estar entre 0 y 5000");
               }
             });
-            </Script>1
+            </Script>
             </div>
       
       
@@ -377,18 +351,18 @@
               var LABEL1 = document.getElementById("resultado2");
               LABEL1.innerHTML = resultado2;
               document.getElementById("APUESTA2").addEventListener("change", function() {
-              resultado2 = (document.getElementById("APUESTA2").value * 400) +  (document.getElementById("COMBI2").value * 83) +  (document.getElementById("PATA2").value * 50)+  (document.getElementById("UÑA2").value * 5);
+              resultado2 = (document.getElementById("APUESTA2").value * 400) +  (document.getElementById("COMBI2").value * 83) +  (document.getElementById("PATA2").value * 50)+  (document.getElementById("UÑA2").value * 4);
               LABEL1.innerHTML = resultado2;
               });
               document.getElementById("COMBI2").addEventListener("change", function() {
-                resultado2 = (document.getElementById("APUESTA2").value * 400) +  (document.getElementById("COMBI2").value * 83) +  (document.getElementById("PATA2").value * 50)+  (document.getElementById("UÑA2").value * 5);
+                resultado2 = (document.getElementById("APUESTA2").value * 400) +  (document.getElementById("COMBI2").value * 83) +  (document.getElementById("PATA2").value * 50)+  (document.getElementById("UÑA2").value * 4);
                 LABEL1.innerHTML = resultado2;
                 });
                 document.getElementById("PATA2").addEventListener("change", function() {
-                  resultado2 = (document.getElementById("APUESTA2").value * 400) +  (document.getElementById("COMBI2").value * 83) +  (document.getElementById("PATA2").value * 50)+  (document.getElementById("UÑA2").value * 5);   LABEL1.innerHTML = resultado2;
+                  resultado2 = (document.getElementById("APUESTA2").value * 400) +  (document.getElementById("COMBI2").value * 83) +  (document.getElementById("PATA2").value * 50)+  (document.getElementById("UÑA2").value * 4);   LABEL1.innerHTML = resultado2;
                   });
                   document.getElementById("UÑA2").addEventListener("change", function() {
-                    resultado2 = (document.getElementById("APUESTA2").value * 400) +  (document.getElementById("COMBI2").value * 83) +  (document.getElementById("PATA2").value * 50)+  (document.getElementById("UÑA2").value * 5);LABEL1.innerHTML = resultado2;
+                    resultado2 = (document.getElementById("APUESTA2").value * 400) +  (document.getElementById("COMBI2").value * 83) +  (document.getElementById("PATA2").value * 50)+  (document.getElementById("UÑA2").value * 4);LABEL1.innerHTML = resultado2;
                     });
               </script>
             
@@ -396,31 +370,6 @@
             <a id="resultado2"  ></a>
           </div>
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </div>
-
-
-
-
-
-
-
 
 
 
@@ -440,6 +389,135 @@
 
 
 
+          <div class="NUMERO3">
+            <input type="number" id="NUMERO3" min="0" max="999" step="1" placeholder="000"
+          style="font-family: 'Arial', sans-serif; font-size:45px; 
+          font-weight: bold; font-style: italic;  margin: 0 auto; 
+          text-align: center;  background-color: rgb(252, 250, 250);
+           border-color:rgb(255, 255, 255); border-style: dotted ;width: 99%;
+           height: 45px;"
+            />
+            <Script>
+              var NUMERO3 = document.getElementById("NUMERO3");
+              NUMERO3.addEventListener("change", function() {
+                if (NUMERO3.value < 0 || NUMERO3.value > 999) {
+                  NUMERO3.value = "";
+                  alert("El valor debe estar entre 0 y 999");
+                }
+              });
+              </Script>
+             </div>
+      
+         <div class="APUESTA3">
+          <input type="number" id="APUESTA3" min="0" max="1000" step="1" placeholder="000"
+          style="font-family: 'Arial', sans-serif; font-size:45px; 
+         font-weight: bold; font-style: italic;  margin: 0 auto; 
+         text-align: center;  background-color: rgb(252, 250, 250);
+         border-color:rgb(255, 255, 255); border-style: dotted ;width: 99%;
+         height: 45px;"
+          />
+        <Script>
+        var APUESTA3 = document.getElementById("APUESTA3");
+        APUESTA3.addEventListener("change", function() {
+        if (APUESTA3.value < 0 || APUESTA3.value > 5000) {
+          APUESTA3.value = "";
+          alert("El valor debe estar entre 0 y 5000");
+        }
+         });
+        </Script>
+        </div>
+      
+            <div class="COMBI3"> 
+              <input type="number" id="COMBI3" min="0" max="1000" step="1" placeholder="000"
+              style="font-family: 'Arial', sans-serif; font-size:45px; 
+              font-weight: bold; font-style: italic;  margin: 0 auto; 
+              text-align: center;  background-color: rgb(252, 250, 250);
+               border-color:rgb(255, 255, 255); border-style: dotted ;width: 99%;
+               height: 45px;"
+                />
+            <Script>
+            var COMBI3 = document.getElementById("COMBI3");
+            COMBI3.addEventListener("change", function() {
+              if (COMBI3.value < 0 || COMBI3.value > 5000) {
+                COMBI3.value = "";
+                alert("El valor debe estar entre 0 y 5000");
+              }
+            });
+            </Script>
+            </div>
+      
+            <div class="PATA3">
+            <input type="number" id="PATA3" min="0" max="1000" step="1" placeholder="000"
+              style="font-family: 'Arial', sans-serif; font-size:45px; 
+              font-weight: bold; font-style: italic;  margin: 0 auto; 
+              text-align: center;  background-color: rgb(252, 250, 250);
+               border-color:rgb(255, 255, 255); border-style: dotted ;width: 99%;
+               height: 45px;"
+                />
+            <Script>
+            var PATA3 = document.getElementById("PATA3");
+            PATA3.addEventListener("change", function() {
+              if (PATA3.value < 0 || PATA3.value > 5000) {
+                PATA3.value = "";
+                alert("El valor debe estar entre 0 y 5000");
+              }
+            });
+            </Script>
+            </div>
+      
+            <div class="UÑA3">
+              <input type="number" id="UÑA3" min="0" max="1000" step="1" placeholder="000"
+              style="font-family: 'Arial', sans-serif; font-size:45px; 
+              font-weight: bold; font-style: italic;  margin: 0 auto; 
+              text-align: center;  background-color: rgb(252, 250, 250);
+               border-color:rgb(255, 255, 255); border-style: dotted ;width: 99%;
+               height: 45px;"
+                />
+            <Script>
+            var UÑA3 = document.getElementById("UÑA3");
+            
+            UÑA3.addEventListener("change", function() {
+              if (UÑA3.value < 0 || UÑA3.value > 5000) {
+                UÑA3.value = "";
+                alert("El valor debe estar entre 0 y 5000");
+              }
+            });
+            </Script>
+            </div>
+      
+      
+      
+      
+                
+      <div class="PREMIO3">
+       
+
+          <a id="resultado3"  >
+            <script>
+              var resultado3 = document.getElementById("APUESTA3").value ;
+          
+              var label2 = document.getElementById("resultado3");
+              label2.innerHTML = resultado3;
+              document.getElementById("APUESTA3").addEventListener("change", function() {
+              resultado3 = (document.getElementById("APUESTA3").value * 400) +  (document.getElementById("COMBI3").value * 83) +  (document.getElementById("PATA3").value * 50)+  (document.getElementById("UÑA3").value * 4);
+              label2.innerHTML = resultado3;
+              });
+              document.getElementById("COMBI3").addEventListener("change", function() {
+                resultado3 = (document.getElementById("APUESTA3").value * 400) +  (document.getElementById("COMBI3").value * 83) +  (document.getElementById("PATA3").value * 50)+  (document.getElementById("UÑA3").value * 4);
+                label2.innerHTML = resultado3;
+                });
+                document.getElementById("PATA3").addEventListener("change", function() {
+                  resultado3 = (document.getElementById("APUESTA3").value * 400) +  (document.getElementById("COMBI3").value * 83) +  (document.getElementById("PATA3").value * 50)+  (document.getElementById("UÑA3").value * 4);   label2.innerHTML = resultado3;
+                  });
+                  document.getElementById("UÑA3").addEventListener("change", function() {
+                    resultado3 = (document.getElementById("APUESTA3").value * 400) +  (document.getElementById("COMBI3").value * 83) +  (document.getElementById("PATA3").value * 50)+  (document.getElementById("UÑA3").value * 4);label2.innerHTML = resultado3;
+                    });
+              </script>
+            
+            </a>
+            <a id="resultado3"  ></a>
+          </div>
+  
 
 
 
