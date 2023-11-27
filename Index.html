@@ -213,30 +213,30 @@
       </div>
 
       <div class="PREMIO1">
-        <a id="resultado"  >
+        <a id="resultado1"  >
           <script>
-            var resultado = document.getElementById("APUESTA1").value ;
+            var resultado1 = document.getElementById("APUESTA1").value ;
         
-            var label = document.getElementById("resultado");
-            label.innerHTML = resultado;
+            var label = document.getElementById("resultado1");
+            label.innerHTML = resultado1;
             document.getElementById("APUESTA1").addEventListener("change", function() {
-            resultado = (document.getElementById("APUESTA1").value * 400) +  (document.getElementById("COMBI1").value * 83) +  (document.getElementById("PATA1").value * 50)+  (document.getElementById("UÑA1").value * 5);
-            label.innerHTML = resultado;
+            resultado1 = (document.getElementById("APUESTA1").value * 400) +  (document.getElementById("COMBI1").value * 83) +  (document.getElementById("PATA1").value * 50)+  (document.getElementById("UÑA1").value * 5);
+            label.innerHTML = resultado1;
             });
             document.getElementById("COMBI1").addEventListener("change", function() {
-              resultado = (document.getElementById("APUESTA1").value * 400) +  (document.getElementById("COMBI1").value * 83) +  (document.getElementById("PATA1").value * 50)+  (document.getElementById("UÑA1").value * 5);
-              label.innerHTML = resultado;
+              resultado1 = (document.getElementById("APUESTA1").value * 400) +  (document.getElementById("COMBI1").value * 83) +  (document.getElementById("PATA1").value * 50)+  (document.getElementById("UÑA1").value * 5);
+              label.innerHTML = resultado1;
               });
               document.getElementById("PATA1").addEventListener("change", function() {
-                resultado = (document.getElementById("APUESTA1").value * 400) +  (document.getElementById("COMBI1").value * 83) +  (document.getElementById("PATA1").value * 50)+  (document.getElementById("UÑA1").value * 5);   label.innerHTML = resultado;
+                resultado1 = (document.getElementById("APUESTA1").value * 400) +  (document.getElementById("COMBI1").value * 83) +  (document.getElementById("PATA1").value * 50)+  (document.getElementById("UÑA1").value * 5);   label.innerHTML = resultado1;
                 });
                 document.getElementById("UÑA1").addEventListener("change", function() {
-                  resultado = (document.getElementById("APUESTA1").value * 400) +  (document.getElementById("COMBI1").value * 83) +  (document.getElementById("PATA1").value * 50)+  (document.getElementById("UÑA1").value * 5);label.innerHTML = resultado;
+                  resultado1 = (document.getElementById("APUESTA1").value * 400) +  (document.getElementById("COMBI1").value * 83) +  (document.getElementById("PATA1").value * 50)+  (document.getElementById("UÑA1").value * 5);label.innerHTML = resultado1;
                   });
             </script>
           
           </a>
-          <a id="resultado"  ></a>
+          <a id="resultado1"  ></a>
         </div>
 
 
@@ -360,7 +360,7 @@
                 alert("El valor debe estar entre 0 y 5000");
               }
             });
-            </Script>
+            </Script>1
             </div>
       
       
@@ -370,31 +370,32 @@
       <div class="PREMIO2">
        
 
-
-
-
-
-
-
-        <a id="resultado2"  >
-          <script>
-            var resultado2 = document.getElementById("APUESTA2").value ;
-            var label2 = document.getElementById("resultado2");
-            label2.innerHTML = resultado2;
-            document.getElementById("APUESTA2").addEventListener("change", function() {
-            resultado2 = (document.getElementById("APUESTA2").value * 400) ;
-            label2.innerHTML = resultado2;
-            });
-            </script>
+          <a id="resultado2"  >
+            <script>
+              var resultado2 = document.getElementById("APUESTA2").value ;
           
-          </a>
-          <a id="resultado2"  ></a>
-
-
-
-
-
-
+              var LABEL1 = document.getElementById("resultado2");
+              LABEL1.innerHTML = resultado2;
+              document.getElementById("APUESTA2").addEventListener("change", function() {
+              resultado2 = (document.getElementById("APUESTA2").value * 400) +  (document.getElementById("COMBI2").value * 83) +  (document.getElementById("PATA2").value * 50)+  (document.getElementById("UÑA2").value * 5);
+              LABEL1.innerHTML = resultado2;
+              });
+              document.getElementById("COMBI2").addEventListener("change", function() {
+                resultado2 = (document.getElementById("APUESTA2").value * 400) +  (document.getElementById("COMBI2").value * 83) +  (document.getElementById("PATA2").value * 50)+  (document.getElementById("UÑA2").value * 5);
+                LABEL1.innerHTML = resultado2;
+                });
+                document.getElementById("PATA2").addEventListener("change", function() {
+                  resultado2 = (document.getElementById("APUESTA2").value * 400) +  (document.getElementById("COMBI2").value * 83) +  (document.getElementById("PATA2").value * 50)+  (document.getElementById("UÑA2").value * 5);   LABEL1.innerHTML = resultado2;
+                  });
+                  document.getElementById("UÑA2").addEventListener("change", function() {
+                    resultado2 = (document.getElementById("APUESTA2").value * 400) +  (document.getElementById("COMBI2").value * 83) +  (document.getElementById("PATA2").value * 50)+  (document.getElementById("UÑA2").value * 5);LABEL1.innerHTML = resultado2;
+                    });
+              </script>
+            
+            </a>
+            <a id="resultado2"  ></a>
+          </div>
+  
 
 
 
