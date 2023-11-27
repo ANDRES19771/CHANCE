@@ -127,7 +127,7 @@
       <Script>
         var NUMERO1 = document.getElementById("NUMERO1");
         NUMERO1.addEventListener("change", function() {
-          if (NUMERO1.value < 0 || NUMERO1.value > 999) {
+          if (NUMERO1.value < 100 || NUMERO1.value > 999) {
             NUMERO1.value = "";
             alert("El valor debe estar entre 0 y 999");
           }
