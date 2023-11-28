@@ -18,6 +18,7 @@
   box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
   -webkit-transform: translateY(-0.25em);
           transform: translateY(-0.25em);
+          box-shadow: 0 0 0 0 var(--hover);
 }
 
 
@@ -36,10 +37,27 @@ button {
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
-button:hover, button:focus {
-  border-color: var(--hover);
-  color: #ffffffbd;
+
+
+
+
+@keyframes span2{
+0%{border-color: var(--hover);
+  color: #ffffff1f;
 }
+100%{ --color: #ffa260;
+  --hover: #e5ff60;
+}
+}
+
+
+
+
+
+
+
+
+
 
 body {
   color: #fff;
@@ -63,5 +81,7 @@ button {
   line-height: 1;
   margin: 0.5em;
   padding: 1em 2em;
+  animation: span2 2s linear infinite;
+animation-delay: 2s;
 }
 
