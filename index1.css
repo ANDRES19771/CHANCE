@@ -602,7 +602,16 @@ color: rgb(255, 253, 253);
 
 
 
-.boton { grid-area: boton; }
+.boton { grid-area: boton; 
+  font-style: unset;
+  color:#d8cfcf;
+  font-size: 23px;
+	box-shadow: 0 0 1rem 0 rgba(189, 182, 182, 0.541);	
+	border-radius: 3PX;
+	background-color: rgba(66, 64, 64, 0.247);
+	backdrop-filter: blur(3px);;
+
+}
 
 
 
@@ -627,6 +636,16 @@ color: rgb(255, 253, 253);
 
 
 button {
+  font-style: unset;
+  color:#d8cfcf;
+  font-size: 50px;
+	box-shadow: 0 0 1rem 0 rgba(189, 182, 182, 0.541);	
+	border-radius: 10PX;
+	background-color: rgba(66, 64, 64, 0.247);
+	backdrop-filter: blur(3px);;
+
+
+
   color: var(--color);
   -webkit-transition: 0.25s;
   transition: 0.25s;
