@@ -28,7 +28,7 @@ body{
 
 .container {  display: grid;
   grid-template-columns: 0.5% 16.5% 16.5% 16.5% 16.5% 16.5% 16.5% 0.5%;
-  grid-template-rows: 1fr 0.5fr 0.5fr 1fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr;
+  grid-template-rows: 1fr 0.5fr 0.5fr 1fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   justify-content: stretch;
@@ -50,7 +50,7 @@ body{
     ". NUMERO1 APUESTA1 COMBI1 PATA1 UÑA1 PREMIO1 ."
     ". NUMERO2 APUESTA2 COMBI2 PATA2 UÑA2 PREMIO2 ."
     ". NUMERO3 APUESTA3 COMBI3 PATA3 UÑA3 PREMIO3 ."
-    ". . . . . . . .";
+    ". boton boton boton boton boton boton .";
 }
 
 .TITULO { grid-area: TITULO;
@@ -602,9 +602,63 @@ color: rgb(255, 253, 253);
 
 
 
+.boton { grid-area: boton; }
 
 
 
+
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+          box-shadow: 0 0 0 0 var(--hover);
+}
+
+
+
+
+
+
+.raise {
+  --color: #362e2e;
+  --hover: #e5ff60;
+}
+
+
+button {
+  color: var(--color);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+
+
+
+@keyframes span2{
+0%{border-color: var(--hover);
+  color: #fbff00ee;
+  
+  
+}
+100%{ --color: #361a1a63;
+  --hover: #c9ee11;
+  
+}
+
+}
+
+
+
+
+
+
+
+button {
+  background: none;
+  animation: span2 1s linear infinite;
+animation-delay: 2s;
+}
 
 
 
