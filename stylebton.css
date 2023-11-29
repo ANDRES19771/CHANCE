@@ -1,18 +1,6 @@
 
 
 
-@-webkit-keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 var(--hover);
-  }
-}
-
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 var(--hover);
-  }
-}
-
 .raise:hover,
 .raise:focus {
   box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
@@ -27,7 +15,7 @@
 
 
 .raise {
-  --color: #ffa260;
+  --color: #ff6060;
   --hover: #e5ff60;
 }
 
@@ -44,15 +32,16 @@ button {
 @keyframes span2{
 0%{border-color: var(--hover);
   color: #ffffff1f;
+  transition: all .10s;
+  transform: rotate(-3deg) scale(0.8); 
+  
 }
 100%{ --color: #ffa260;
   --hover: #e5ff60;
+  
 }
+
 }
-
-
-
-
 
 
 
@@ -81,7 +70,7 @@ button {
   line-height: 1;
   margin: 0.5em;
   padding: 1em 2em;
-  animation: span2 2s linear infinite;
+  animation: span2 10s linear infinite;
 animation-delay: 2s;
 }
 
