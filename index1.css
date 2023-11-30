@@ -637,11 +637,11 @@ color: rgb(255, 253, 253);
 
 button {
   font-style: unset;
-  color:#d8cfcf;
+  color:#e2ff03;
   font-size: 50px;
-	box-shadow: 0 0 1rem 0 rgba(189, 182, 182, 0.541);	
+	box-shadow: 0 0 1rem 0 rgba(173, 202, 10, 0.884);	
 	border-radius: 10PX;
-	background-color: rgba(66, 64, 64, 0.247);
+	background-color: rgb(255, 255, 1);
 	backdrop-filter: blur(3px);;
 
 
